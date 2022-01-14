@@ -1,0 +1,58 @@
+package project40;
+
+public class Accessmodifiers{
+		
+			  void display() 
+			     { 
+			         System.out.println("default access specifier"); 
+			     } 
+			} 
+
+		 class accessSpecifiers1 {
+
+				public static void main(String[] args) {
+					
+					System.out.println("Default Access Specifier");
+					Accessmodifiers obj = new Accessmodifiers(); 		  
+			        obj.display(); 
+
+				}
+			}
+		 class preaccessspecifier 
+		 { 
+		    private void display() 
+		     { 
+		         System.out.println("You are using private access specifier"); 
+		     } 
+		 } 
+
+		 class accessSpecifiers2 {
+
+		 	public static void main(String[] args) {
+		 		System.out.println("Private Access Specifier");
+		 		preaccessspecifier  obj = new preaccessspecifier(); 
+		         
+
+		 	}
+		 }
+
+		 class preaccessspecifiers {
+
+		 	protected void display() 
+		     { 
+		         System.out.println("This is protected access specifier"); 
+		     } 
+		 }
+		 class accessSpecifiers4 {
+
+				public static void main(String[] args) {
+					
+					preaccessspecifiers obj = new preaccessspecifiers(); 
+			        obj.display();  
+					
+				}
+			}
+
+
+
+
